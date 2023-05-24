@@ -1,12 +1,12 @@
 from flask import Flask, request
 import openai
-from googletrans import Translator
+import webbrowser
 
 app = Flask(__name__)
 
 # Set up OpenAI API credentials
-openai.api_key = "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"
-translator = Translator()
+openai.api_key = "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"
+
 # HTML code for the form
 form_html = '''
 <!DOCTYPE html>
@@ -573,4 +573,6 @@ def index():
         return form_html
 
 if __name__ == '__main__':
+   
+
     app.run(debug=True)
